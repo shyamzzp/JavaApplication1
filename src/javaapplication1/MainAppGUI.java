@@ -5,9 +5,16 @@
  */
 package javaapplication1;
 
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
 import java.util.ArrayList;
 import java.awt.event.ItemEvent;
 import java.io.File;
+import java.util.Arrays;
+import static javaapplication1.MainAppGUI.jPanel1;
+import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 
 class DialogInputBox extends javax.swing.JFrame {
@@ -322,6 +329,15 @@ class DialogInputBox extends javax.swing.JFrame {
 
             diary.add(ta1);
             diary.save(new File("appointment.csv"));
+        }
+        Component[] components = (Component[]) jPanel1.getComponents();
+        for (Component component : components){
+            if (component instanceof JButton ){
+                JButton btn = (JButton)component;
+                if(btn.getText().equals(jComboBox4.getSelectedItem().toString())){
+                    btn.setBackground(Color.red);
+                }
+            }
         }
         this.dispose();
     }
@@ -983,11 +999,27 @@ public class MainAppGUI extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         new DialogInputBox().setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
-
+    public void colorButton(String s){
+        Component[] components = (Component[]) jPanel1.getComponents();
+        for (Component component : components){
+            if (component instanceof JButton ){
+                JButton btn = (JButton)component;
+                if(btn.getText().equals(s)){
+                    btn.setBackground(Color.red);
+                }
+            }
+        }
+    }
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-
+        colorButton("1");
+//        Component[] components = (Component[]) jPanel1.getComponents();
+//        for (Component component : components){
+//            if (component instanceof JButton){
+//                print(component.toString());
+//            }
+//        }
     }//GEN-LAST:event_jButton6ActionPerformed
-
+    
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         //Delete Appointment
         String getSelectedItem = list1.getSelectedItem();
@@ -1263,7 +1295,7 @@ public class MainAppGUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JPanel jPanel1;
+    public static javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private java.awt.List list1;
     // End of variables declaration//GEN-END:variables
