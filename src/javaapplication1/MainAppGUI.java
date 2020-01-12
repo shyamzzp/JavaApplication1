@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package javaapplication1;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -15,6 +17,7 @@ import java.util.Arrays;
 import static javaapplication1.MainAppGUI.jPanel1;
 import javax.swing.JButton;
 import javax.swing.JComponent;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 class DialogInputBox extends javax.swing.JFrame {
@@ -834,15 +837,16 @@ public class MainAppGUI extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(day1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -890,6 +894,11 @@ public class MainAppGUI extends javax.swing.JFrame {
         jMenu2.setText("File");
 
         jMenuItem1.setText("Load Diary");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem1);
 
         jMenuItem3.setText("Save Diary");
@@ -1207,6 +1216,45 @@ public class MainAppGUI extends javax.swing.JFrame {
     private void day31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day31ActionPerformed
         commonButtonMethod(evt);
     }//GEN-LAST:event_day31ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        JFileChooser chooser = new JFileChooser();
+        chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        int returnVal = chooser.showOpenDialog(this);
+        String fileName = "";
+        if(returnVal == JFileChooser.APPROVE_OPTION) {
+           fileName = chooser.getSelectedFile().getAbsolutePath();
+        }
+        
+        
+        //Reading file and Creating Appointments
+        BufferedReader reader;
+        try {
+                reader = new BufferedReader(new FileReader(fileName));
+                String line = reader.readLine();
+                while (line != null) {
+                        System.out.println(line);
+                        String[] args = line.split(",");
+                        Appointment uta1=new UntimedAppointment(args[0],
+                                new Date(Integer.parseInt(args[2]),
+                                        Integer.parseInt(args[3]),
+                                        Integer.parseInt(args[4])));
+                        DialogInputBox.diary.add(uta1);
+                        Component[] components = (Component[]) jPanel1.getComponents();
+                        for (Component component : components){
+                        if (component instanceof JButton ){
+                            JButton btn = (JButton)component;
+                            if(btn.getText().equals(args[4])){
+                                btn.setBackground(Color.red);
+                            }
+                        }
+        }
+                        line = reader.readLine();
+                }
+                reader.close();
+        } catch (IOException e) {
+        }
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
