@@ -636,15 +636,15 @@ public class MainAppGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -652,11 +652,11 @@ public class MainAppGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -703,123 +703,123 @@ public class MainAppGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_day1ActionPerformed
 
     private void day2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day2ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day2ActionPerformed
 
     private void day3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day3ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day3ActionPerformed
 
     private void day4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day4ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day4ActionPerformed
 
     private void day5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day5ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day5ActionPerformed
 
     private void day6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day6ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day6ActionPerformed
 
     private void day7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day7ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day7ActionPerformed
 
     private void day8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day8ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day8ActionPerformed
 
     private void day9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day9ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day9ActionPerformed
 
     private void day10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day10ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day10ActionPerformed
 
     private void day11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day11ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day11ActionPerformed
 
     private void day12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day12ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day12ActionPerformed
 
     private void day13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day13ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day13ActionPerformed
 
     private void day14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day14ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day14ActionPerformed
 
     private void day15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day15ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day15ActionPerformed
 
     private void day16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day16ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day16ActionPerformed
 
     private void day17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day17ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day17ActionPerformed
 
     private void day18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day18ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day18ActionPerformed
 
     private void day19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day19ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day19ActionPerformed
 
     private void day20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day20ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day20ActionPerformed
 
     private void day21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day21ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day21ActionPerformed
 
     private void day22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day22ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day22ActionPerformed
 
     private void day23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day23ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day23ActionPerformed
 
     private void day24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day24ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day24ActionPerformed
 
     private void day25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day25ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day25ActionPerformed
 
     private void day26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day26ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day26ActionPerformed
 
     private void day27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day27ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day27ActionPerformed
 
     private void day28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day28ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day28ActionPerformed
 
     private void day29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day29ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day29ActionPerformed
 
     private void day30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day30ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day30ActionPerformed
 
     private void day31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day31ActionPerformed
-        commonButtonMethod(evt);        // TODO add your handling code here:
+        commonButtonMethod(evt);        
     }//GEN-LAST:event_day31ActionPerformed
 
     /**
