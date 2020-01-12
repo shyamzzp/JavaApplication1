@@ -89,7 +89,7 @@ public class DialogInputBox extends javax.swing.JFrame {
 
         jLabel3.setText("Description: ");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" }));
         jComboBox1.setEnabled(false);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2019" }));
@@ -120,7 +120,7 @@ public class DialogInputBox extends javax.swing.JFrame {
 
         jLabel6.setText(":");
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" }));
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" }));
         jComboBox8.setEnabled(false);
 
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59" }));
@@ -309,11 +309,15 @@ public class DialogInputBox extends javax.swing.JFrame {
             int month = jComboBox3.getSelectedIndex();
             String date = jComboBox4.getSelectedItem().toString();
             
-            Appointment ta1=new TimedAppointment("Christmas party",
-                    new Date(2019,12,25),
-                    new Time(19,0),
-                    new Time(23,0));
+            int startHr = Integer.parseInt(jComboBox8.getSelectedItem().toString());
+            int startMin = Integer.parseInt(jComboBox9.getSelectedItem().toString());
+            int endHr = Integer.parseInt(jComboBox1.getSelectedItem().toString());
+            int endMin = Integer.parseInt(jComboBox11.getSelectedItem().toString());
             
+            Appointment ta1=new TimedAppointment(Description,
+                    new Date(Integer.parseInt(year),(month+1),Integer.parseInt(date)),
+                    new Time(startHr,startMin),
+                    new Time(endHr,endMin));
             
             diary.add(ta1);
             diary.save(new File("appointment.csv"));
