@@ -6,7 +6,6 @@
 package javaapplication1;
 
 import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.io.File;
 public class DialogInputBox extends javax.swing.JFrame {
     Diary diary=new Diary();
@@ -300,7 +299,24 @@ public class DialogInputBox extends javax.swing.JFrame {
         
         //------------------If "Second Selected"---------------------
         if(!jCheckBox1.isSelected() && jCheckBox2.isSelected()){
-            print("Second Selected");
+            String Description = jTextField1.getText();
+            
+            if(Description.equals("")){
+                Description = "Not Provided by User";
+            }
+            
+            String year = jComboBox2.getSelectedItem().toString();
+            int month = jComboBox3.getSelectedIndex();
+            String date = jComboBox4.getSelectedItem().toString();
+            
+            Appointment ta1=new TimedAppointment("Christmas party",
+                    new Date(2019,12,25),
+                    new Time(19,0),
+                    new Time(23,0));
+            
+            
+            diary.add(ta1);
+            diary.save(new File("appointment.csv"));
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
