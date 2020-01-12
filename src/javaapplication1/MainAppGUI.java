@@ -20,19 +20,6 @@ public class MainAppGUI extends javax.swing.JFrame {
     /**
      * Creates new form MainAppGUI
      */
-    /**
-     * Creates new form NewJFrame
-     * @param rows
-     * @param cols
-     */
-    public void GridTest(int rows, int cols) {
-    Container pane = getContentPane();
-    pane.setLayout(new GridLayout(rows, cols));
-    for (int i = 0; i < 20; i++) {
-      JButton button = new JButton(Integer.toString(i + 1));
-      pane.add(button);
-    }
-    }
     public MainAppGUI() {
         initComponents();
         JPanel contentPanel = new JPanel(new GridLayout(6,7));

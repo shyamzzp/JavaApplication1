@@ -262,10 +262,6 @@ public class DialogInputBox extends javax.swing.JFrame {
             
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //Save Button Funcn
-        Boolean repeat = false;
-        boolean next = false;
-        
-        
         //------------------If Both Checkbox are unchecked---------------------
         if(!jCheckBox1.isSelected() && !jCheckBox2.isSelected()){
             
