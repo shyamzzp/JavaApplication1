@@ -528,8 +528,30 @@ public class MainAppGUI extends javax.swing.JFrame {
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         int indexSelectedMonth = jComboBox2.getSelectedIndex() + 1;
         int indexSelectedYear = Integer.parseInt(jComboBox1.getSelectedItem().toString());
+        int numberDays = (Date.daysInMonth(indexSelectedYear,indexSelectedMonth));
+        //default visibility to be set true
+        day29.setVisible(true);
+        day30.setVisible(true);
+        day31.setVisible(true);
+        switch (numberDays) {
+            
+            case 29:
+                day30.setVisible(false);
+                day31.setVisible(false);
+                break;
+            case 28:
+                day29.setVisible(false);
+                day30.setVisible(false);
+                day31.setVisible(false);
+                break;
+            case 30:
+                day31.setVisible(false);
+                break;
+            default:
+                break;
+        }
         
-        print(Date.daysInMonth(indexSelectedYear,indexSelectedMonth)+"");
+        
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
