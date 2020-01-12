@@ -6,38 +6,39 @@
 package javaapplication1;
 
 import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.io.File;
 public class DialogInputBox extends javax.swing.JFrame {
-
+    Diary diary=new Diary();
     /**
      * Creates new form DialogInputBox
      */
     public DialogInputBox() {
         initComponents();
-
+        
         //Action Listeners
         jCheckBox2.addItemListener((ItemEvent e) -> {
             if (e.getStateChange() == 1) {
                 jComboBox8.setEnabled(true);
                 jComboBox9.setEnabled(true);
-                jComboBox10.setEnabled(true);
+                jComboBox1.setEnabled(true);
                 jComboBox11.setEnabled(true);
             } else {
                 jComboBox8.setEnabled(false);                
                 jComboBox9.setEnabled(false);
-                jComboBox10.setEnabled(false);
+                jComboBox1.setEnabled(false);
                 jComboBox11.setEnabled(false);
             }
         });
         
         jCheckBox1.addItemListener((ItemEvent e) -> {
             if (e.getStateChange() == 1) {
-                jComboBox1.setEnabled(true);
+                jComboBox10.setEnabled(true);
                 jComboBox5.setEnabled(true);
                 jComboBox6.setEnabled(true);
                 jComboBox7.setEnabled(true);
             } else {
-                jComboBox1.setEnabled(false);                
+                jComboBox10.setEnabled(false);                
                 jComboBox5.setEnabled(false);
                 jComboBox6.setEnabled(false);
                 jComboBox7.setEnabled(false);
@@ -89,24 +90,24 @@ public class DialogInputBox extends javax.swing.JFrame {
 
         jLabel3.setText("Description: ");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" }));
         jComboBox1.setEnabled(false);
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2019", "", "", "" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2019" }));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "January", "February", "March", "April" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "January", "February", "March", "April", "May", "june", "July", "August", "September", "October", "November", "December" }));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
         jLabel4.setText("End Date: ");
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2019", "", "", "" }));
         jComboBox5.setEnabled(false);
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "January", "February", "March", "April" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "January", "February", "March", "April", "May", "june", "July", "August", "September", "October", "November", "December" }));
         jComboBox6.setEnabled(false);
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         jComboBox7.setEnabled(false);
 
         jCheckBox2.setText("Timed");
@@ -120,16 +121,16 @@ public class DialogInputBox extends javax.swing.JFrame {
 
         jLabel6.setText(":");
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11" }));
         jComboBox8.setEnabled(false);
 
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59" }));
         jComboBox9.setEnabled(false);
 
         jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DAILY", "WEEKLY", "YEARLY", "" }));
         jComboBox10.setEnabled(false);
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59" }));
         jComboBox11.setEnabled(false);
 
         jLabel7.setText("End Time: ");
@@ -184,23 +185,25 @@ public class DialogInputBox extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton2))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel5)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel6)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel7)
-                            .addGap(21, 21, 21)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jLabel8)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(18, 18, 18)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(58, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -260,18 +263,46 @@ public class DialogInputBox extends javax.swing.JFrame {
             
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //Save Button Funcn
-        String Description = jTextField1.getText();
-        if(Description.equals("")){
-            Description = "Not Provided by User";
+        Boolean repeat = false;
+        boolean next = false;
+        
+        
+        //------------------If Both Checkbox are unchecked---------------------
+        if(!jCheckBox1.isSelected() && !jCheckBox2.isSelected()){
+            
+            String Description = jTextField1.getText();
+            
+            if(Description.equals("")){
+                Description = "Not Provided by User";
+            }
+            
+            String year = jComboBox2.getSelectedItem().toString();
+            int month = jComboBox3.getSelectedIndex();
+            String date = jComboBox4.getSelectedItem().toString();
+            
+            Appointment uta1=new UntimedAppointment(Description,
+                    new Date(Integer.parseInt(year),(month+1),
+                            Integer.parseInt(date)));
+            
+            
+            diary.add(uta1);
+            diary.save(new File("appointment.csv"));
         }
-        String value = jComboBox2.getSelectedItem().toString();
-        print(value);
-        Appointment uta1=new UntimedAppointment(Description,new Date(2019,12,25));
-        //Test for Task 6
-        Diary diary=new Diary();
-        diary.add(uta1);
-        diary.save(new File("New.csv"));
-        print(Description);
+        //------------------If Both Checkbox are checked---------------------
+        if(jCheckBox1.isSelected() && jCheckBox2.isSelected()){
+            print("Both Selected");
+        }
+        
+        //------------------If First Selected---------------------
+        if(jCheckBox1.isSelected() && !jCheckBox2.isSelected()){
+            print("First Selected");
+        }
+        
+        //------------------If "Second Selected"---------------------
+        if(!jCheckBox1.isSelected() && jCheckBox2.isSelected()){
+            print("Second Selected");
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
