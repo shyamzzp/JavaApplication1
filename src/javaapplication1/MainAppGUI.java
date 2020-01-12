@@ -5,17 +5,6 @@
  */
 package javaapplication1;
 
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.event.ItemEvent;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-
-
-
 public class MainAppGUI extends javax.swing.JFrame {
 
     /**
@@ -516,7 +505,6 @@ public class MainAppGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
@@ -534,7 +522,6 @@ public class MainAppGUI extends javax.swing.JFrame {
         day30.setVisible(true);
         day31.setVisible(true);
         switch (numberDays) {
-            
             case 29:
                 day30.setVisible(false);
                 day31.setVisible(false);
