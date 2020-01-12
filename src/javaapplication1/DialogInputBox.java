@@ -6,6 +6,7 @@
 package javaapplication1;
 
 import java.awt.event.ItemEvent;
+import java.io.File;
 public class DialogInputBox extends javax.swing.JFrame {
 
     /**
@@ -253,9 +254,24 @@ public class DialogInputBox extends javax.swing.JFrame {
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
 
     }//GEN-LAST:event_jCheckBox2ActionPerformed
-
+    public void print(String s){
+        System.out.println(s);
+    }
+            
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        //Save Button Funcn
+        String Description = jTextField1.getText();
+        if(Description.equals("")){
+            Description = "Not Provided by User";
+        }
+        String value = jComboBox2.getSelectedItem().toString();
+        print(value);
+        Appointment uta1=new UntimedAppointment(Description,new Date(2019,12,25));
+        //Test for Task 6
+        Diary diary=new Diary();
+        diary.add(uta1);
+        diary.save(new File("New.csv"));
+        print(Description);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
