@@ -169,66 +169,221 @@ public class MainAppGUI extends javax.swing.JFrame {
         });
 
         day1.setText("1");
+        day1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day1ActionPerformed(evt);
+            }
+        });
 
         day2.setText("2");
+        day2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day2ActionPerformed(evt);
+            }
+        });
 
         day3.setText("3");
+        day3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day3ActionPerformed(evt);
+            }
+        });
 
         day6.setText("6");
+        day6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day6ActionPerformed(evt);
+            }
+        });
 
         day5.setText("5");
+        day5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day5ActionPerformed(evt);
+            }
+        });
 
         day4.setText("4");
+        day4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day4ActionPerformed(evt);
+            }
+        });
 
         day7.setText("7");
+        day7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day7ActionPerformed(evt);
+            }
+        });
 
         day14.setText("14");
+        day14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day14ActionPerformed(evt);
+            }
+        });
 
         day13.setText("13");
+        day13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day13ActionPerformed(evt);
+            }
+        });
 
         day12.setText("12");
+        day12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day12ActionPerformed(evt);
+            }
+        });
 
         day11.setText("11");
+        day11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day11ActionPerformed(evt);
+            }
+        });
 
         day10.setText("10");
+        day10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day10ActionPerformed(evt);
+            }
+        });
 
         day9.setText("9");
+        day9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day9ActionPerformed(evt);
+            }
+        });
 
         day8.setText("8");
+        day8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day8ActionPerformed(evt);
+            }
+        });
 
         day19.setText("19");
+        day19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day19ActionPerformed(evt);
+            }
+        });
 
         day17.setText("17");
+        day17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day17ActionPerformed(evt);
+            }
+        });
 
         day18.setText("18");
+        day18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day18ActionPerformed(evt);
+            }
+        });
 
         day16.setText("16");
+        day16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day16ActionPerformed(evt);
+            }
+        });
 
         day21.setText("21");
+        day21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day21ActionPerformed(evt);
+            }
+        });
 
         day15.setText("15");
+        day15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day15ActionPerformed(evt);
+            }
+        });
 
         day20.setText("20");
+        day20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day20ActionPerformed(evt);
+            }
+        });
 
         day24.setText("24");
+        day24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day24ActionPerformed(evt);
+            }
+        });
 
         day23.setText("23");
+        day23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day23ActionPerformed(evt);
+            }
+        });
 
         day25.setText("25");
+        day25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day25ActionPerformed(evt);
+            }
+        });
 
         day27.setText("27");
+        day27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day27ActionPerformed(evt);
+            }
+        });
 
         day22.setText("22");
+        day22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day22ActionPerformed(evt);
+            }
+        });
 
         day28.setText("28");
+        day28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day28ActionPerformed(evt);
+            }
+        });
 
         day26.setText("26");
+        day26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day26ActionPerformed(evt);
+            }
+        });
 
         day31.setText("31");
+        day31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day31ActionPerformed(evt);
+            }
+        });
 
         day30.setText("30");
+        day30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day30ActionPerformed(evt);
+            }
+        });
 
         day29.setText("29");
+        day29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                day29ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Monday");
@@ -510,13 +665,13 @@ public class MainAppGUI extends javax.swing.JFrame {
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
-    public void print(String s){
-            System.out.println(s);
-        }
+    public void print(String s) {
+        System.out.println(s);
+    }
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         int indexSelectedMonth = jComboBox2.getSelectedIndex() + 1;
         int indexSelectedYear = Integer.parseInt(jComboBox1.getSelectedItem().toString());
-        int numberDays = (Date.daysInMonth(indexSelectedYear,indexSelectedMonth));
+        int numberDays = (Date.daysInMonth(indexSelectedYear, indexSelectedMonth));
         //default visibility to be set true
         day29.setVisible(true);
         day30.setVisible(true);
@@ -537,9 +692,135 @@ public class MainAppGUI extends javax.swing.JFrame {
             default:
                 break;
         }
-        
-        
+
+
     }//GEN-LAST:event_jComboBox2ActionPerformed
+    public void commonButtonMethod(java.awt.event.ActionEvent evt) {
+        print(evt.getActionCommand());
+    }
+    private void day1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day1ActionPerformed
+        commonButtonMethod(evt);
+    }//GEN-LAST:event_day1ActionPerformed
+
+    private void day2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day2ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day2ActionPerformed
+
+    private void day3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day3ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day3ActionPerformed
+
+    private void day4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day4ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day4ActionPerformed
+
+    private void day5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day5ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day5ActionPerformed
+
+    private void day6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day6ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day6ActionPerformed
+
+    private void day7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day7ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day7ActionPerformed
+
+    private void day8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day8ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day8ActionPerformed
+
+    private void day9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day9ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day9ActionPerformed
+
+    private void day10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day10ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day10ActionPerformed
+
+    private void day11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day11ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day11ActionPerformed
+
+    private void day12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day12ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day12ActionPerformed
+
+    private void day13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day13ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day13ActionPerformed
+
+    private void day14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day14ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day14ActionPerformed
+
+    private void day15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day15ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day15ActionPerformed
+
+    private void day16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day16ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day16ActionPerformed
+
+    private void day17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day17ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day17ActionPerformed
+
+    private void day18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day18ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day18ActionPerformed
+
+    private void day19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day19ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day19ActionPerformed
+
+    private void day20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day20ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day20ActionPerformed
+
+    private void day21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day21ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day21ActionPerformed
+
+    private void day22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day22ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day22ActionPerformed
+
+    private void day23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day23ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day23ActionPerformed
+
+    private void day24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day24ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day24ActionPerformed
+
+    private void day25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day25ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day25ActionPerformed
+
+    private void day26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day26ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day26ActionPerformed
+
+    private void day27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day27ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day27ActionPerformed
+
+    private void day28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day28ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day28ActionPerformed
+
+    private void day29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day29ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day29ActionPerformed
+
+    private void day30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day30ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day30ActionPerformed
+
+    private void day31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_day31ActionPerformed
+        commonButtonMethod(evt);        // TODO add your handling code here:
+    }//GEN-LAST:event_day31ActionPerformed
 
     /**
      * @param args the command line arguments
